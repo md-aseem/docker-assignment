@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  my-python-app:
+    build: .
+    volumes:
+      - /home/data:/home/data  
+      - /home/output:/home/output
+    working_dir: /usr/src/app
